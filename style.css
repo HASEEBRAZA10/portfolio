@@ -1,5 +1,6 @@
 html{
     scroll-behavior: smooth;
+    font-size: 10px;
 }
 body{
     margin: 0px;
@@ -491,14 +492,16 @@ footer{
     border-left: 0px;
     border-right: 0px;
     border-bottom: 0px;
-    height: 90px;
+    height: 80px;
 }
 .footer-1{
     color: white;
     text-align: center;
-    margin-top: -35px;
+    margin-top: 5px;
     font-size: 25px;
     font-family:"baloo 2", Arial, Helvetica, sans-serif;
+    position:static;
+    bottom: 0;
 }
 .logo-1{
     color: rgb(215, 215, 246);
@@ -519,4 +522,840 @@ footer{
     margin-top: 20px;
     margin-left: 500px;
 }
+/* =========================================================
+   RESPONSIVE CSS
+   Desktop wali original CSS ko disturb nahi karega
+========================================================= */
 
+
+/* =========================
+   TABLET / SMALL LAPTOP
+========================= */
+@media (max-width: 1200px) {
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .navbar {
+        width: 100%;
+        padding: 10px 5%;
+    }
+
+    .image-hero {
+        padding-left: 0;
+    }
+
+    .hero {
+        width: 100%;
+        padding: 40px 5%;
+    }
+
+    .name {
+        font-size: 60px;
+    }
+
+    .photo {
+        width: 300px;
+        height: 300px;
+        max-width: 100%;
+    }
+
+    .about,
+    .para,
+    .container,
+    .contact-form,
+    .social-icons-1 {
+        margin-left: 0;
+    }
+
+    .hr-1 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Cards */
+    .container,
+    .container-1,
+    .container-2,
+    .container-main {
+        width: 100%;
+        max-width: 100%;
+        padding: 20px;
+        margin-left: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: stretch;
+        gap: 20px;
+    }
+
+    .card,
+    .card-1,
+    .card-2 {
+        max-width: 100%;
+        height: auto;
+        min-height: 140px;
+        overflow: hidden;
+    }
+
+    /* Card content */
+    .card img,
+    .card-1 img,
+    .card-2 img {
+        position: static;
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin: 10px auto;
+    }
+
+    .card h1,
+    .card h2,
+    .card h3,
+    .card p,
+    .card-1 h1,
+    .card-1 h2,
+    .card-1 h3,
+    .card-1 p,
+    .card-2 h1,
+    .card-2 h2,
+    .card-2 h3,
+    .card-2 p {
+        position: static;
+        margin: 8px auto;
+        max-width: 100%;
+    }
+}
+
+
+/* =========================
+   TABLET
+========================= */
+@media (max-width: 900px) {
+
+    .navbar {
+        width: 100%;
+        padding: 12px 4%;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .nav-links {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        width: 100%;
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+    .image-hero {
+        padding-left: 0;
+        width: 100%;
+    }
+
+    .h1 {
+        font-size: 32px;
+    }
+
+    .name {
+        font-size: 50px;
+    }
+
+    .frontend {
+        font-size: 32px;
+    }
+
+    .design {
+        font-size: 20px;
+    }
+
+    .photo {
+        width: 250px;
+        height: 250px;
+        margin: 20px auto;
+    }
+
+    .about {
+        margin: 50px 0 0;
+        text-align: center;
+    }
+
+    .para {
+        margin: 20px auto;
+        max-width: 90%;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .hr-1 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Main containers */
+    .container,
+    .container-1,
+    .container-2,
+    .container-main {
+        width: 100%;
+        padding: 20px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: stretch;
+        gap: 20px;
+    }
+
+    /* Cards */
+    .card,
+    .card-1,
+    .card-2 {
+        width: min(100%, 330px);
+        max-width: 330px;
+        height: auto;
+        min-height: 150px;
+        padding: 20px;
+        overflow: hidden;
+        text-align: center;
+    }
+
+    /* VERY IMPORTANT:
+       Prevent absolute elements from overlapping */
+    .card *,
+    .card-1 *,
+    .card-2 * {
+        max-width: 100%;
+    }
+
+    .card img,
+    .card-1 img,
+    .card-2 img {
+        position: static;
+        display: block;
+        width: auto;
+        max-width: 80px;
+        height: auto;
+        margin: 10px auto 15px;
+    }
+
+    .card h1,
+    .card h2,
+    .card h3,
+    .card p,
+    .card-1 h1,
+    .card-1 h2,
+    .card-1 h3,
+    .card-1 p,
+    .card-2 h1,
+    .card-2 h2,
+    .card-2 h3,
+    .card-2 p {
+        position: static;
+        width: 100%;
+        margin: 8px 0;
+        line-height: 1.5;
+        text-align: center;
+    }
+
+    .skill {
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .main-1 {
+        width: min(90%, 300px);
+        max-width: 100%;
+    }
+
+    .say {
+        width: min(90%, 400px);
+        max-width: 100%;
+    }
+
+    .hh1 {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .contact-form {
+        width: 100%;
+        margin: 0;
+        align-items: center;
+    }
+
+    .name-1,
+    .email,
+    .message,
+    .subject {
+        width: min(90%, 600px);
+        max-width: 100%;
+    }
+
+    .btn-primary {
+        width: min(90%, 600px);
+        max-width: 100%;
+    }
+
+    .social-icons-1 {
+        margin: 0;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+@media (max-width: 768px) {
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .navbar {
+        width: 100%;
+        flex-direction: column;
+        padding: 15px 3%;
+        gap: 10px;
+    }
+
+    .nav-links {
+        width: 100%;
+        gap: 12px;
+        padding: 0;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        font-size: 25px;
+    }
+
+    a {
+        font-size: 16px;
+    }
+
+    .hero {
+        width: 100%;
+        padding: 25px 15px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .image-hero {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .h1 {
+        font-size: 28px;
+    }
+
+    .name {
+        font-size: 42px;
+        line-height: 1.1;
+    }
+
+    .frontend {
+        font-size: 28px;
+    }
+
+    .design {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+    .btn,
+    .btn-1 {
+        font-size: 18px;
+        padding: 10px 15px;
+        max-width: 100%;
+    }
+
+    .photo {
+        width: 220px;
+        height: 220px;
+        max-width: 80vw;
+        margin: 30px auto;
+    }
+
+    .social-icons {
+        width: 100%;
+        justify-content: center;
+        margin-left: 0;
+        gap: 20px;
+        font-size: 40px;
+        flex-wrap: wrap;
+    }
+
+    .profile {
+        width: min(250px, 90%);
+        height: auto;
+        min-height: 180px;
+        margin-left: 0;
+    }
+
+    .about {
+        width: 100%;
+        margin: 30px 0 0;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .para {
+        width: 100%;
+        margin: 15px auto;
+        padding: 0 15px;
+        font-size: 18px;
+        line-height: 1.6;
+        text-align: center;
+    }
+
+
+    /* =====================
+       FIX FOR CARDS
+    ===================== */
+
+    .container,
+    .container-1,
+    .container-2,
+    .container-main {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 20px 12px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: stretch;
+        gap: 18px;
+    }
+
+    .card,
+    .card-1,
+    .card-2 {
+        width: 100%;
+        max-width: 350px;
+        min-height: 170px;
+        height: auto;
+        margin: 0 auto;
+        padding: 20px 15px;
+        text-align: center;
+        overflow: hidden;
+
+        /* Remove common overlap causes */
+        position: relative;
+    }
+
+    /* Images inside cards */
+    .card img,
+    .card-1 img,
+    .card-2 img {
+        position: static !important;
+        display: block;
+        width: auto;
+        max-width: 70px;
+        height: auto;
+        margin: 10px auto 15px;
+    }
+
+    /* Text inside cards */
+    .card h1,
+    .card h2,
+    .card h3,
+    .card p,
+    .card-1 h1,
+    .card-1 h2,
+    .card-1 h3,
+    .card-1 p,
+    .card-2 h1,
+    .card-2 h2,
+    .card-2 h3,
+    .card-2 p {
+        position: static !important;
+        width: 100%;
+        max-width: 100%;
+        margin: 8px auto;
+        text-align: center;
+        line-height: 1.5;
+    }
+
+    .skill {
+        width: 100%;
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .main-1 {
+        width: min(90%, 300px);
+        max-width: 100%;
+    }
+
+    .say {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    .hh1 {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .contact-form {
+        width: 100%;
+        margin-left: 0;
+        align-items: center;
+    }
+
+    .name-1,
+    .email,
+    .message,
+    .subject {
+        width: 90%;
+        max-width: 600px;
+    }
+
+    .btn-primary {
+        width: 90%;
+        max-width: 600px;
+    }
+
+    .social-icons-1 {
+        width: 100%;
+        margin-left: 0;
+        justify-content: center;
+        font-size: 40px;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+@media (max-width: 576px) {
+
+    .navbar {
+        padding: 12px 2%;
+    }
+
+    .nav-links {
+        gap: 8px;
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    a {
+        font-size: 14px;
+    }
+
+    .hero {
+        padding: 20px 10px;
+    }
+
+    .h1 {
+        font-size: 23px;
+    }
+
+    .name {
+        font-size: clamp(28px, 10vw, 34px);
+    }
+
+    .frontend {
+        font-size: 23px;
+    }
+
+    .design {
+        font-size: 16px;
+    }
+
+    .photo {
+        width: 180px;
+        height: 180px;
+        max-width: 70vw;
+    }
+
+    .social-icons {
+        font-size: 32px;
+        gap: 15px;
+    }
+
+    .profile {
+        width: min(220px, 85%);
+        height: auto;
+    }
+
+    .about {
+        font-size: 22px;
+    }
+
+    .para {
+        font-size: 16px;
+        padding: 0 10px;
+    }
+
+
+    /* Cards */
+    .container,
+    .container-1,
+    .container-2,
+    .container-main {
+        width: 100%;
+        padding: 15px 8px;
+        gap: 15px;
+    }
+
+    .card,
+    .card-1,
+    .card-2 {
+        width: 100%;
+        max-width: 95%;
+        min-height: 160px;
+        height: auto;
+        padding: 18px 12px;
+    }
+
+    .card img,
+    .card-1 img,
+    .card-2 img {
+        max-width: 60px;
+        margin: 8px auto 12px;
+    }
+
+    .card h1,
+    .card h2,
+    .card h3,
+    .card p,
+    .card-1 h1,
+    .card-1 h2,
+    .card-1 h3,
+    .card-1 p,
+    .card-2 h1,
+    .card-2 h2,
+    .card-2 h3,
+    .card-2 p {
+        margin: 6px auto;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .main-1 {
+        width: 90%;
+    }
+
+    .say {
+        width: 90%;
+    }
+
+    .name-1,
+    .email,
+    .message,
+    .subject {
+        width: 90%;
+        padding: 14px;
+    }
+
+    .btn-primary {
+        width: 94%;
+        font-size: 20px;
+    }
+
+    .footer-1 {
+        font-size: 18px;
+    }
+
+    .logo-1 {
+        font-size: 24px;
+        margin-left: 10px;
+    }
+
+    .social-icons-1 {
+        font-size: 32px;
+        gap: 15px;
+    }
+}
+
+
+/* =========================
+   VERY SMALL MOBILE
+========================= */
+@media (max-width: 400px) {
+
+    .navbar {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .nav-links {
+        gap: 6px;
+    }
+
+    a {
+        font-size: 12px;
+    }
+
+    .name {
+        font-size: 28px;
+    }
+
+    .frontend {
+        font-size: 20px;
+    }
+
+    .photo {
+        width: 160px;
+        height: 160px;
+    }
+
+    .about {
+        font-size: 20px;
+    }
+
+    .para {
+        font-size: 15px;
+    }
+
+    .container,
+    .container-1,
+    .container-2,
+    .container-main {
+        padding-left: 5px;
+        padding-right: 5px;
+        gap: 12px;
+    }
+
+    .card,
+    .card-1,
+    .card-2 {
+        width: 96%;
+        max-width: 96%;
+        min-height: 150px;
+        padding: 15px 10px;
+    }
+
+    .card img,
+    .card-1 img,
+    .card-2 img {
+        max-width: 55px;
+    }
+
+    .card h1,
+    .card h2,
+    .card h3,
+    .card p,
+    .card-1 h1,
+    .card-1 h2,
+    .card-1 h3,
+    .card-1 p,
+    .card-2 h1,
+    .card-2 h2,
+    .card-2 h3,
+    .card-2 p {
+        font-size: 15px;
+        line-height: 1.45;
+    }
+
+    .say {
+        width: 95%;
+    }
+
+    .name-1,
+    .email,
+    .message,
+    .subject {
+        width: 92%;
+    }
+
+    .btn-primary {
+        width: 96%;
+    }
+}
+
+
+/* =========================
+   EXTRA SMALL DEVICES
+   320px / 300px etc.
+========================= */
+@media (max-width: 340px) {
+
+    .logo {
+        font-size: 19px;
+    }
+
+    .nav-links {
+        gap: 5px;
+    }
+
+    a {
+        font-size: 11px;
+    }
+
+    .name {
+        font-size: 25px;
+    }
+
+    .frontend {
+        font-size: 18px;
+    }
+
+    .design {
+        font-size: 14px;
+    }
+
+    .photo {
+        width: 140px;
+        height: 140px;
+    }
+
+    .card,
+    .card-1,
+    .card-2 {
+        width: 98%;
+        padding: 12px 8px;
+    }
+
+    .card h1,
+    .card h2,
+    .card h3,
+    .card p,
+    .card-1 h1,
+    .card-1 h2,
+    .card-1 h3,
+    .card-1 p,
+    .card-2 h1,
+    .card-2 h2,
+    .card-2 h3,
+    .card-2 p {
+        font-size: 14px;
+    }
+
+    .social-icons {
+        font-size: 28px;
+        gap: 10px;
+    }
+}
